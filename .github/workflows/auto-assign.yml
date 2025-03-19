@@ -18,3 +18,10 @@ jobs:
           assignees: |
             Bryancdi
           numOfAssignee: 1
+    - name: 'Auto-assign pull request'
+      uses: kentaro-m/auto-assign-action@v2
+      with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          assignees: |
+            ERP-Modular/admin_role
+          numOfAssignee: 1
