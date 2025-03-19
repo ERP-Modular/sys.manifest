@@ -3,7 +3,7 @@ on:
   issues:
     types: [opened]
   pull_request:
-    types: [opened]
+    labels: [check]
 jobs:
   run:
     runs-on: ubuntu-latest
@@ -19,7 +19,7 @@ jobs:
             Bryancdi
           numOfAssignee: 1
     - name: 'Auto-assign pull request'
-      uses: kentaro-m/auto-assign-action@v2
+      uses: bobheadxi/auto-assign@v1
       with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           assignees: |
