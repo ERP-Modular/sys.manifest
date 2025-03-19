@@ -15,5 +15,6 @@ jobs:
       uses: pozil/auto-assign-issue@v1
       with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
-          assignees: ERP-Modular/admin_role
+          assignees: |
+            Bryancdi
           numOfAssignee: 1
